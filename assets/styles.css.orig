@@ -1,0 +1,94 @@
+
+/* table td, table th {
+  padding: 6px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --md-primary-fg-color: #066ABE;
+  --md-default-fg-color--light: #4093e2;
+  --md-accent-fg-color: #4093e2;
+}
+
+.code-collapsed {
+  max-height: 160px;
+  overflow: hidden !important;
+}
+
+.code-expand {
+  top: 120px;
+  left: 46%;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  background: rgba(18, 154, 100, 0.3);
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.code-expand span {
+  font-size: 20px;
+  display: inline-flex;
+  margin-top: -6px;
+}
+
+.code-collapsed:hover .code-expand {
+  background: rgba(18, 154, 100);
+}
+
+.md-header-nav__title, .md-header {
+  background-color: #066ABE;
+}
+
+table {
+  margin-bottom: 2em;
+}
+
+code.verb {
+  background-color: #4093e2;
+  color: white;
+}
+
+code.verb-delete {
+  background-color: #e25326;
+}
+
+.wy-nav-content {
+  max-width: 1000px;
+}
+
+.md-logo {
+  width: 234px !important;
+}
+
+.md-logo img {
+  width: 116px !important;
+}
+
+@media screen and (min-width: 1600px) {
+  .md-logo {
+    width: 260px !important;
+  }
+}
+
+.md-grid {
+  max-width: 70rem;
+}
+
+.md-typeset .warning>.admonition-title {
+  background-color: rgba(253,196,2,0.2); 
+}
+
+/* tweaks */
+
+.md-typeset table code {
+  background-color: #e7f1ff;
+  font-size: .95em;
+  color: #111;
+}
