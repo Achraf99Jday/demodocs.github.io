@@ -8,9 +8,25 @@ const form = document.querySelector("[data-form]")
 const queryParamsContainer = document.querySelector("[data-query-params]")
 const requestHeadersContainer = document.querySelector("[data-request-headers]")
 const keyValueTemplate = document.querySelector("[data-key-value-template]")
-const responseHeadersContainer = document.querySelector(
-  "[data-response-headers]"
-)
+const responseHeadersContainer = document.querySelector("[data-response-headers]")
+const button = document.querySelector("[generate-key-btn]")
+
+button.addEventListener("click", () => {
+
+  axios.post('https://api.pricehubble.com/auth/login/credentials', {
+    "username": document.getElementById("username").value,
+    "password": document.getElementById("password").value
+  })
+    .then((response) => {
+      var json = JSON.parse(JSON.stringify(response.data))
+      console.log(json)
+      document.getElementById("bearer").value = 'Bearer ' + json["access_token"]
+      document.getElementById("key").value = 'Bearer ' + json["access_token"]
+    }, (error) => {
+      console.log(error);
+    });
+
+})
 
 document
   .querySelector("[data-add-query-param-btn]")
@@ -56,11 +72,12 @@ form.addEventListener("submit", e => {
     return
   }
 
+  console.log(document.getElementById("key").value)
+
   axios({
     url: document.querySelector("[data-url]").value,
     method: document.querySelector("[data-method]").value,
-    params: keyValuePairsToObjects(queryParamsContainer),
-    headers: keyValuePairsToObjects(requestHeadersContainer),
+    headers: {Authorization : document.getElementById("key").value},
     data,
   })
     .catch(e => e)
@@ -80,7 +97,7 @@ function updateResponseDetails(response) {
   document.querySelector("[data-time]").textContent = response.customData.time
   document.querySelector("[data-size]").textContent = prettyBytes(
     JSON.stringify(response.data).length +
-      JSON.stringify(response.headers).length
+    JSON.stringify(response.headers).length
   )
 }
 

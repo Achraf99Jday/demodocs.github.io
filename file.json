@@ -1,0 +1,24 @@
+{
+    "dealType": "rent",
+    "property": {
+        "location": {
+            "address": {
+                "city": "Sceaux",
+                "houseNumber": "152",
+                "postCode": "92330",
+                "street": "Rue Houdan"
+            },
+            "coordinates": {
+                "latitude": 48.7791834,
+                "longitude": 2.2849066
+            }
+        },
+        "propertyType": {
+            "code": "apartment"
+        },
+        "buildingYear": 1999,
+        "livingArea": 200.00,
+        "condition": "well_maintained"
+    },
+    "countryCode": "FR"
+}
