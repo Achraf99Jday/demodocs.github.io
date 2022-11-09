@@ -16,7 +16,7 @@ export default function setupEditors() {
 
   const requestEditor = new EditorView({
     state: EditorState.create({
-      doc: "{\n\t\n}",
+      doc: '{ "dealType": "sale", "property": { "location": { "address": { "city": "Zurich", "houseNumber": "391", "postCode": "8037", "street": "Nordstrasse" }, "coordinates": { "latitude": 47.3968601, "longitude": 8.5153549 } }, "propertyType": { "code": "house" }, "buildingYear": 2000, "livingArea": 200, "landArea": 100, "condition": "well_maintained" }, "countryCode": "CH" }',
       extensions: basicExtensions,
     }),
     parent: jsonRequestBody,
