@@ -1,1700 +1,992 @@
-
 <!doctype html>
 <html lang="en" class="no-js">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-237073641-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-237073641-1');
-</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-237073641-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <script src="script.js" type="module"></script>
-      
-      
-      
-      <link rel="icon" href="../../../static.pricehubble.com/corporate/img/favicon-64x64.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
-    
-    
-      
-        <title>Valuation Light - PriceHubble Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ca7ac06f.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
-        
-      
-    
-    
-    
-      
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="../../../fonts.googleapis.com/css%3Ffamily=Roboto:300,400,400i,700|Roboto+Mono&amp;display=fallback.css">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
-      <link rel="stylesheet" href="../../assets/styles.css">
-    
-    
-      
-
-  
-
-
-  
-
-  
-
-
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JEMY2ZE2LV"),document.addEventListener("DOMContentLoaded",function(){"undefined"!=typeof location$&&location$.subscribe(function(t){gtag("config","G-JEMY2ZE2LV",{page_path:t.pathname})})})</script>
+    gtag('config', 'UA-237073641-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="script.js" type="module"></script>
+  <link rel="icon" href="../../../static.pricehubble.com/corporate/img/favicon-64x64.png">
+  <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
+  <title>Valuation Light - PriceHubble Documentation</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/main.ca7ac06f.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="../../../fonts.googleapis.com/css%3Ffamily=Roboto:300,400,400i,700|Roboto+Mono&amp;display=fallback.css">
+  <style>
+    :root {
+      --md-text-font-family: "Roboto";
+      --md-code-font-family: "Roboto Mono"
+    }
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-JEMY2ZE2LV"), document.addEventListener("DOMContentLoaded", function () { "undefined" != typeof location$ && location$.subscribe(function (t) { gtag("config", "G-JEMY2ZE2LV", { page_path: t.pathname }) }) })</script>
   <script async src="../../../www.googletagmanager.com/gtag/js%3Fid=G-JEMY2ZE2LV"></script>
+</head>
 
-
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
-  
-    
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="index.html#request" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://docs.pricehubble.com/" title="PriceHubble Documentation" class="md-header__button md-logo" aria-label="PriceHubble Documentation" data-md-component="logo">
-      
-  <img src="../../assets/logo-white.svg" alt="logo">
-
+<body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  <script>function __prefix(e) { return new URL("../..", location).pathname + "." + e } function __get(e, t = localStorage) { return JSON.parse(t.getItem(__prefix(e))) }</script>
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+  <label class="md-overlay" for="__drawer"></label>
+  <div data-md-component="skip">
+    <a href="index.html#request" class="md-skip">
+      Skip to content
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            PriceHubble Documentation
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Valuation Light
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+  </div>
+  <div data-md-component="announce">
+  </div>
+  <header class="md-header" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="Header">
+      <a href="https://docs.pricehubble.com/" title="PriceHubble Documentation" class="md-header__button md-logo"
+        aria-label="PriceHubble Documentation" data-md-component="logo">
+        <img src="../../assets/logo-white.svg" alt="logo">
+      </a>
+      <label class="md-header__button md-icon" for="__drawer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" />
+        </svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
+      <div class="md-header__title" data-md-component="header-title">
+        <div class="md-header__ellipsis">
+          <div class="md-header__topic">
+            <span class="md-ellipsis">
+              PriceHubble Documentation
+            </span>
           </div>
-          <ol class="md-search-result__list"></ol>
+          <div class="md-header__topic" data-md-component="header-topic">
+            <span class="md-ellipsis">
+              Valuation Light
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-    
-    
-  </nav>
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="https://docs.pricehubble.com/" title="PriceHubble Documentation" class="md-nav__button md-logo" aria-label="PriceHubble Documentation" data-md-component="logo">
-      
-  <img src="../../assets/logo-white.svg" alt="logo">
-
-    </a>
-    PriceHubble Documentation
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/" class="md-nav__link">
-        Introduction
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      <label class="md-nav__link" for="__nav_2">
-        Products
-        <span class="md-nav__icon md-icon"></span>
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z" />
+        </svg>
       </label>
-      <nav class="md-nav" aria-label="Products" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Products
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/products/products_overview/" class="md-nav__link">
-        Products Overview
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      <label class="md-nav__link" for="__nav_3">
-        Integrations
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Integrations" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Integrations
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/integrations/lead_generator/" class="md-nav__link">
-        Lead Generator
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/integrations/property_advisor/" class="md-nav__link">
-        Property Advisor
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/integrations/dash/" class="md-nav__link">
-        Dash
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/integrations/dash_pdf/" class="md-nav__link">
-        Dash PDF Report
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      <label class="md-nav__link" for="__nav_4">
-        APIs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="APIs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          APIs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/getting_started_api/" class="md-nav__link">
-        Getting Started
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/authentication/" class="md-nav__link">
-        Authentication
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/error_handling/" class="md-nav__link">
-        Error Handling
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" checked>
-      
-      <label class="md-nav__link" for="__nav_4_4">
-        Endpoints Library
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Endpoints Library" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
-          <span class="md-nav__icon md-icon"></span>
-          Endpoints Library
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_1" type="checkbox" id="__nav_4_4_1" checked>
-      
-      <label class="md-nav__link" for="__nav_4_4_1">
-        Valuation
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Valuation" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_1">
-          <span class="md-nav__icon md-icon"></span>
-          Valuation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/valuation/" class="md-nav__link">
-        Valuation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Valuation Light
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
-        Valuation Light
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="index.html#request" class="md-nav__link">
-    Request
-  </a>
-  
-    <nav class="md-nav" aria-label="Request">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="index.html#example-request-multi-family-house" class="md-nav__link">
-    Example Request (Multi-Family House):
-  </a>
-  
-</li>
-        
-      </ul>
+      <div class="md-search" data-md-component="search" role="dialog">
+        <label class="md-search__overlay" for="__search"></label>
+        <div class="md-search__inner" role="search">
+          <form class="md-search__form" name="search">
+            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search"
+              autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false"
+              data-md-component="search-query" data-md-state="active" required>
+            <label class="md-search__icon md-icon" for="__search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z" />
+              </svg>
+            </label>
+            <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+              </svg>
+            </button>
+          </form>
+          <div class="md-search__output">
+            <div class="md-search__scrollwrap" data-md-scrollfix>
+              <div class="md-search-result" data-md-component="search-result">
+                <div class="md-search-result__meta">
+                  Initializing search
+                </div>
+                <ol class="md-search-result__list"></ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="index.html#response" class="md-nav__link">
-    Response
-  </a>
-  
-    <nav class="md-nav" aria-label="Response">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="index.html#example-response-multi-family-house" class="md-nav__link">
-    Example Response (Multi-Family House)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" type="checkbox" id="__nav_4_4_2" >
-      
-      <label class="md-nav__link" for="__nav_4_4_2">
-        Dossier
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Dossier" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_2">
-          <span class="md-nav__icon md-icon"></span>
-          Dossier
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_creation/" class="md-nav__link">
-        Dossier Creation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_read/" class="md-nav__link">
-        Dossier Read
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_deletion/" class="md-nav__link">
-        Dossier Deletion
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_images/" class="md-nav__link">
-        Dossier Images
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_logos/" class="md-nav__link">
-        Dossier Logos
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_search/" class="md-nav__link">
-        Dossier Search
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_sharing/" class="md-nav__link">
-        Dossier Sharing
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_transfer/" class="md-nav__link">
-        Dossier Transfer
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_update/" class="md-nav__link">
-        Dossier Update
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_valuation/" class="md-nav__link">
-        Dossier Valuation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_valuation_override/" class="md-nav__link">
-        Dossier Valuation Override
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2_12" type="checkbox" id="__nav_4_4_2_12" >
-      
-      <label class="md-nav__link" for="__nav_4_4_2_12">
-        Dossier Attachments
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Dossier Attachments" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_4_2_12">
-          <span class="md-nav__icon md-icon"></span>
-          Dossier Attachments
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_attachment_upload/" class="md-nav__link">
-        Attachment Upload
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_attachment_edit/" class="md-nav__link">
-        Attachment Edit
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/dossier_attachment_for_dossier/" class="md-nav__link">
-        Attachment For Dossier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" type="checkbox" id="__nav_4_4_3" >
-      
-      <label class="md-nav__link" for="__nav_4_4_3">
-        Offer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Offer" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_3">
-          <span class="md-nav__icon md-icon"></span>
-          Offer
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/offer_search/" class="md-nav__link">
-        Offer Search
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/offer_statistics/" class="md-nav__link">
-        Offer Statistics
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/offer_statistics_light/" class="md-nav__link">
-        Offer Statistics Light
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_4" type="checkbox" id="__nav_4_4_4" >
-      
-      <label class="md-nav__link" for="__nav_4_4_4">
-        Transaction
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Transaction" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_4">
-          <span class="md-nav__icon md-icon"></span>
-          Transaction
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/transaction_search/" class="md-nav__link">
-        Transaction Search
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/transaction_statistics/" class="md-nav__link">
-        Transaction Statistics
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5" type="checkbox" id="__nav_4_4_5" >
-      
-      <label class="md-nav__link" for="__nav_4_4_5">
-        Exclusive Comparables
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Exclusive Comparables" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_5">
-          <span class="md-nav__icon md-icon"></span>
-          Exclusive Comparables
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5_1" type="checkbox" id="__nav_4_4_5_1" >
-      
-      <label class="md-nav__link" for="__nav_4_4_5_1">
-        Transactions
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Transactions" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_4_5_1">
-          <span class="md-nav__icon md-icon"></span>
-          Transactions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/transaction/creation/" class="md-nav__link">
-        Exclusive Transaction Creation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/transaction/read/" class="md-nav__link">
-        Exclusive Transaction  Read
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/transaction/deletion/" class="md-nav__link">
-        Exclusive Transaction Deletion
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/transaction/update/" class="md-nav__link">
-        Exclusive Transaction Update
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/transaction/search/" class="md-nav__link">
-        Exclusive Transaction Search
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5_2" type="checkbox" id="__nav_4_4_5_2" >
-      
-      <label class="md-nav__link" for="__nav_4_4_5_2">
-        Offers
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Offers" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_4_5_2">
-          <span class="md-nav__icon md-icon"></span>
-          Offers
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/offer/creation/" class="md-nav__link">
-        Exclusive Offer Creation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/offer/read/" class="md-nav__link">
-        Exclusive Offer Read
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/offer/deletion/" class="md-nav__link">
-        Exclusive Offer Deletion
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/offer/update/" class="md-nav__link">
-        Exclusive Offer Update
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/offer/search/" class="md-nav__link">
-        Exclusive Offer Search
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/exclusive/comparables/images/" class="md-nav__link">
-        Exclusive Comparables Images
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_6" type="checkbox" id="__nav_4_4_6" >
-      
-      <label class="md-nav__link" for="__nav_4_4_6">
-        Socio-Economics
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Socio-Economics" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_6">
-          <span class="md-nav__icon md-icon"></span>
-          Socio-Economics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/socio_economics/" class="md-nav__link">
-        Socio-Economics
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/socio_economics_types/" class="md-nav__link">
-        Socio-Economics Types
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/pois/" class="md-nav__link">
-        Points of Interest
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/isochrones/" class="md-nav__link">
-        Isochrones
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/building_projects/" class="md-nav__link">
-        Building Projects
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/buildings/" class="md-nav__link">
-        Buildings
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/property_info/" class="md-nav__link">
-        Property Info
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_12" type="checkbox" id="__nav_4_4_12" >
-      
-      <label class="md-nav__link" for="__nav_4_4_12">
-        Administrative Division
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Administrative Division" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_12">
-          <span class="md-nav__icon md-icon"></span>
-          Administrative Division
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/division_children/" class="md-nav__link">
-        Administrative Division Children
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/divisions/" class="md-nav__link">
-        Administrative Divisions
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/location_scores/" class="md-nav__link">
-        Location Scores
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/international/override_amenities_scores/" class="md-nav__link">
-        Override Amenities Scores
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/property_tracker/" class="md-nav__link">
-        Property tracker
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16" type="checkbox" id="__nav_4_4_16" >
-      
-      <label class="md-nav__link" for="__nav_4_4_16">
-        Settings
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Settings" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_4_16">
-          <span class="md-nav__icon md-icon"></span>
-          Settings
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16_1" type="checkbox" id="__nav_4_4_16_1" >
-      
-      <label class="md-nav__link" for="__nav_4_4_16_1">
-        Covers
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Covers" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_4_16_1">
-          <span class="md-nav__icon md-icon"></span>
-          Covers
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/cover/creation/" class="md-nav__link">
-        Cover Creation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/cover/read/" class="md-nav__link">
-        Cover Read
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/cover/edit/" class="md-nav__link">
-        Covers Edit
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/cover/deletion/" class="md-nav__link">
-        Cover Deletion
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/cover/list/" class="md-nav__link">
-        Covers List
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16_2" type="checkbox" id="__nav_4_4_16_2" >
-      
-      <label class="md-nav__link" for="__nav_4_4_16_2">
-        Templates
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Templates" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_4_16_2">
-          <span class="md-nav__icon md-icon"></span>
-          Templates
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/template/creation/" class="md-nav__link">
-        Template Creation
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/template/read/" class="md-nav__link">
-        Template Read
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/template/edit/" class="md-nav__link">
-        Template Edit
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/template/deletion/" class="md-nav__link">
-        Template Deletion
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/apis/user-settings/template/list/" class="md-nav__link">
-        Templates List
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/types/" class="md-nav__link">
-        Types
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.pricehubble.com/changelog/" class="md-nav__link">
-        Changelog
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-  </ul>
-</nav>
+  </header>
+  <div class="md-container" data-md-component="container">
+    <main class="md-main" data-md-component="main">
+      <div class="md-main__inner md-grid">
+        <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+              <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                <label class="md-nav__title" for="__drawer">
+                  <a href="https://docs.pricehubble.com/" title="PriceHubble Documentation"
+                    class="md-nav__button md-logo" aria-label="PriceHubble Documentation" data-md-component="logo">
+                    <img src="../../assets/logo-white.svg" alt="logo">
+                  </a>
+                  PriceHubble Documentation
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  <li class="md-nav__item">
+                    <a href="https://docs.pricehubble.com/" class="md-nav__link">
+                      Introduction
+                    </a>
+                  </li>
+                  <li class="md-nav__item md-nav__item--nested">
+                    <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+                    <label class="md-nav__link" for="__nav_2">
+                      Products
+                      <span class="md-nav__icon md-icon"></span>
+                    </label>
+                    <nav class="md-nav" aria-label="Products" data-md-level="1">
+                      <label class="md-nav__title" for="__nav_2">
+                        <span class="md-nav__icon md-icon"></span>
+                        Products
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/products/products_overview/" class="md-nav__link">
+                            Products Overview
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li class="md-nav__item md-nav__item--nested">
+                    <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+                    <label class="md-nav__link" for="__nav_3">
+                      Integrations
+                      <span class="md-nav__icon md-icon"></span>
+                    </label>
+                    <nav class="md-nav" aria-label="Integrations" data-md-level="1">
+                      <label class="md-nav__title" for="__nav_3">
+                        <span class="md-nav__icon md-icon"></span>
+                        Integrations
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/integrations/lead_generator/" class="md-nav__link">
+                            Lead Generator
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/integrations/property_advisor/" class="md-nav__link">
+                            Property Advisor
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/integrations/dash/" class="md-nav__link">
+                            Dash
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/integrations/dash_pdf/" class="md-nav__link">
+                            Dash PDF Report
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+                    <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4"
+                      checked>
+                    <label class="md-nav__link" for="__nav_4">
+                      APIs
+                      <span class="md-nav__icon md-icon"></span>
+                    </label>
+                    <nav class="md-nav" aria-label="APIs" data-md-level="1">
+                      <label class="md-nav__title" for="__nav_4">
+                        <span class="md-nav__icon md-icon"></span>
+                        APIs
+                      </label>
+                      <ul class="md-nav__list" data-md-scrollfix>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/international/getting_started_api/"
+                            class="md-nav__link">
+                            Getting Started
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/international/authentication/" class="md-nav__link">
+                            Authentication
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/international/error_handling/" class="md-nav__link">
+                            Error Handling
+                          </a>
+                        </li>
+                        <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+                          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox"
+                            id="__nav_4_4" checked>
+                          <label class="md-nav__link" for="__nav_4_4">
+                            Endpoints Library
+                            <span class="md-nav__icon md-icon"></span>
+                          </label>
+                          <nav class="md-nav" aria-label="Endpoints Library" data-md-level="2">
+                            <label class="md-nav__title" for="__nav_4_4">
+                              <span class="md-nav__icon md-icon"></span>
+                              Endpoints Library
+                            </label>
+                            <ul class="md-nav__list" data-md-scrollfix>
+                              <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_1" type="checkbox"
+                                  id="__nav_4_4_1" checked>
+                                <label class="md-nav__link" for="__nav_4_4_1">
+                                  Valuation
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Valuation" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_1">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Valuation
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/valuation/"
+                                        class="md-nav__link">
+                                        Valuation
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item md-nav__item--active">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox"
+                                        id="__toc">
+                                      <label class="md-nav__link md-nav__link--active" for="__toc">
+                                        Valuation Light
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <a href="index.html" class="md-nav__link md-nav__link--active">
+                                        Valuation Light
+                                      </a>
+                                      <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                        <label class="md-nav__title" for="__toc">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Table of contents
+                                        </label>
+                                        <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="index.html#request" class="md-nav__link">
+                                              Request
+                                            </a>
+                                            <nav class="md-nav" aria-label="Request">
+                                              <ul class="md-nav__list">
+                                                <li class="md-nav__item">
+                                                  <a href="index.html#example-request-multi-family-house"
+                                                    class="md-nav__link">
+                                                    Example Request (Multi-Family House):
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </nav>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="index.html#response" class="md-nav__link">
+                                              Response
+                                            </a>
+                                            <nav class="md-nav" aria-label="Response">
+                                              <ul class="md-nav__list">
+                                                <li class="md-nav__item">
+                                                  <a href="index.html#example-response-multi-family-house"
+                                                    class="md-nav__link">
+                                                    Example Response (Multi-Family House)
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </nav>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" type="checkbox"
+                                  id="__nav_4_4_2">
+                                <label class="md-nav__link" for="__nav_4_4_2">
+                                  Dossier
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Dossier" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_2">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Dossier
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_creation/"
+                                        class="md-nav__link">
+                                        Dossier Creation
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_read/"
+                                        class="md-nav__link">
+                                        Dossier Read
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_deletion/"
+                                        class="md-nav__link">
+                                        Dossier Deletion
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_images/"
+                                        class="md-nav__link">
+                                        Dossier Images
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_logos/"
+                                        class="md-nav__link">
+                                        Dossier Logos
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_search/"
+                                        class="md-nav__link">
+                                        Dossier Search
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_sharing/"
+                                        class="md-nav__link">
+                                        Dossier Sharing
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_transfer/"
+                                        class="md-nav__link">
+                                        Dossier Transfer
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_update/"
+                                        class="md-nav__link">
+                                        Dossier Update
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_valuation/"
+                                        class="md-nav__link">
+                                        Dossier Valuation
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/dossier_valuation_override/"
+                                        class="md-nav__link">
+                                        Dossier Valuation Override
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item md-nav__item--nested">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2_12"
+                                        type="checkbox" id="__nav_4_4_2_12">
+                                      <label class="md-nav__link" for="__nav_4_4_2_12">
+                                        Dossier Attachments
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <nav class="md-nav" aria-label="Dossier Attachments" data-md-level="4">
+                                        <label class="md-nav__title" for="__nav_4_4_2_12">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Dossier Attachments
+                                        </label>
+                                        <ul class="md-nav__list" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/international/dossier_attachment_upload/"
+                                              class="md-nav__link">
+                                              Attachment Upload
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/international/dossier_attachment_edit/"
+                                              class="md-nav__link">
+                                              Attachment Edit
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/international/dossier_attachment_for_dossier/"
+                                              class="md-nav__link">
+                                              Attachment For Dossier
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" type="checkbox"
+                                  id="__nav_4_4_3">
+                                <label class="md-nav__link" for="__nav_4_4_3">
+                                  Offer
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Offer" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_3">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Offer
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/offer_search/"
+                                        class="md-nav__link">
+                                        Offer Search
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/offer_statistics/"
+                                        class="md-nav__link">
+                                        Offer Statistics
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/offer_statistics_light/"
+                                        class="md-nav__link">
+                                        Offer Statistics Light
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_4" type="checkbox"
+                                  id="__nav_4_4_4">
+                                <label class="md-nav__link" for="__nav_4_4_4">
+                                  Transaction
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Transaction" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_4">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Transaction
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/transaction_search/"
+                                        class="md-nav__link">
+                                        Transaction Search
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/transaction_statistics/"
+                                        class="md-nav__link">
+                                        Transaction Statistics
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5" type="checkbox"
+                                  id="__nav_4_4_5">
+                                <label class="md-nav__link" for="__nav_4_4_5">
+                                  Exclusive Comparables
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Exclusive Comparables" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_5">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Exclusive Comparables
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item md-nav__item--nested">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5_1"
+                                        type="checkbox" id="__nav_4_4_5_1">
+                                      <label class="md-nav__link" for="__nav_4_4_5_1">
+                                        Transactions
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <nav class="md-nav" aria-label="Transactions" data-md-level="4">
+                                        <label class="md-nav__title" for="__nav_4_4_5_1">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Transactions
+                                        </label>
+                                        <ul class="md-nav__list" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/transaction/creation/"
+                                              class="md-nav__link">
+                                              Exclusive Transaction Creation
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/transaction/read/"
+                                              class="md-nav__link">
+                                              Exclusive Transaction Read
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/transaction/deletion/"
+                                              class="md-nav__link">
+                                              Exclusive Transaction Deletion
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/transaction/update/"
+                                              class="md-nav__link">
+                                              Exclusive Transaction Update
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/transaction/search/"
+                                              class="md-nav__link">
+                                              Exclusive Transaction Search
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                    <li class="md-nav__item md-nav__item--nested">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_5_2"
+                                        type="checkbox" id="__nav_4_4_5_2">
+                                      <label class="md-nav__link" for="__nav_4_4_5_2">
+                                        Offers
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <nav class="md-nav" aria-label="Offers" data-md-level="4">
+                                        <label class="md-nav__title" for="__nav_4_4_5_2">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Offers
+                                        </label>
+                                        <ul class="md-nav__list" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/offer/creation/"
+                                              class="md-nav__link">
+                                              Exclusive Offer Creation
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/offer/read/"
+                                              class="md-nav__link">
+                                              Exclusive Offer Read
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/offer/deletion/"
+                                              class="md-nav__link">
+                                              Exclusive Offer Deletion
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/offer/update/"
+                                              class="md-nav__link">
+                                              Exclusive Offer Update
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/exclusive/offer/search/"
+                                              class="md-nav__link">
+                                              Exclusive Offer Search
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/apis/exclusive/comparables/images/"
+                                        class="md-nav__link">
+                                        Exclusive Comparables Images
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_6" type="checkbox"
+                                  id="__nav_4_4_6">
+                                <label class="md-nav__link" for="__nav_4_4_6">
+                                  Socio-Economics
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Socio-Economics" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_6">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Socio-Economics
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/socio_economics/"
+                                        class="md-nav__link">
+                                        Socio-Economics
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/socio_economics_types/"
+                                        class="md-nav__link">
+                                        Socio-Economics Types
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/pois/" class="md-nav__link">
+                                  Points of Interest
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/isochrones/" class="md-nav__link">
+                                  Isochrones
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/building_projects/"
+                                  class="md-nav__link">
+                                  Building Projects
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/buildings/" class="md-nav__link">
+                                  Buildings
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/property_info/"
+                                  class="md-nav__link">
+                                  Property Info
+                                </a>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_12" type="checkbox"
+                                  id="__nav_4_4_12">
+                                <label class="md-nav__link" for="__nav_4_4_12">
+                                  Administrative Division
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Administrative Division" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_12">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Administrative Division
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/division_children/"
+                                        class="md-nav__link">
+                                        Administrative Division Children
+                                      </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                      <a href="https://docs.pricehubble.com/international/divisions/"
+                                        class="md-nav__link">
+                                        Administrative Divisions
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/location_scores/"
+                                  class="md-nav__link">
+                                  Location Scores
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/international/override_amenities_scores/"
+                                  class="md-nav__link">
+                                  Override Amenities Scores
+                                </a>
+                              </li>
+                              <li class="md-nav__item">
+                                <a href="https://docs.pricehubble.com/apis/property_tracker/" class="md-nav__link">
+                                  Property tracker
+                                </a>
+                              </li>
+                              <li class="md-nav__item md-nav__item--nested">
+                                <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16" type="checkbox"
+                                  id="__nav_4_4_16">
+                                <label class="md-nav__link" for="__nav_4_4_16">
+                                  Settings
+                                  <span class="md-nav__icon md-icon"></span>
+                                </label>
+                                <nav class="md-nav" aria-label="Settings" data-md-level="3">
+                                  <label class="md-nav__title" for="__nav_4_4_16">
+                                    <span class="md-nav__icon md-icon"></span>
+                                    Settings
+                                  </label>
+                                  <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item md-nav__item--nested">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16_1"
+                                        type="checkbox" id="__nav_4_4_16_1">
+                                      <label class="md-nav__link" for="__nav_4_4_16_1">
+                                        Covers
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <nav class="md-nav" aria-label="Covers" data-md-level="4">
+                                        <label class="md-nav__title" for="__nav_4_4_16_1">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Covers
+                                        </label>
+                                        <ul class="md-nav__list" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/cover/creation/"
+                                              class="md-nav__link">
+                                              Cover Creation
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/cover/read/"
+                                              class="md-nav__link">
+                                              Cover Read
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/cover/edit/"
+                                              class="md-nav__link">
+                                              Covers Edit
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/cover/deletion/"
+                                              class="md-nav__link">
+                                              Cover Deletion
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/cover/list/"
+                                              class="md-nav__link">
+                                              Covers List
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                    <li class="md-nav__item md-nav__item--nested">
+                                      <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_16_2"
+                                        type="checkbox" id="__nav_4_4_16_2">
+                                      <label class="md-nav__link" for="__nav_4_4_16_2">
+                                        Templates
+                                        <span class="md-nav__icon md-icon"></span>
+                                      </label>
+                                      <nav class="md-nav" aria-label="Templates" data-md-level="4">
+                                        <label class="md-nav__title" for="__nav_4_4_16_2">
+                                          <span class="md-nav__icon md-icon"></span>
+                                          Templates
+                                        </label>
+                                        <ul class="md-nav__list" data-md-scrollfix>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/template/creation/"
+                                              class="md-nav__link">
+                                              Template Creation
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/template/read/"
+                                              class="md-nav__link">
+                                              Template Read
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/template/edit/"
+                                              class="md-nav__link">
+                                              Template Edit
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/template/deletion/"
+                                              class="md-nav__link">
+                                              Template Deletion
+                                            </a>
+                                          </li>
+                                          <li class="md-nav__item">
+                                            <a href="https://docs.pricehubble.com/apis/user-settings/template/list/"
+                                              class="md-nav__link">
+                                              Templates List
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </li>
+                            </ul>
+                          </nav>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/types/" class="md-nav__link">
+                            Types
+                          </a>
+                        </li>
+                        <li class="md-nav__item">
+                          <a href="https://docs.pricehubble.com/changelog/" class="md-nav__link">
+                            Changelog
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+              <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                <label class="md-nav__title" for="__toc">
+                  <span class="md-nav__icon md-icon"></span>
+                  Table of contents
+                </label>
+                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                  <li class="md-nav__item">
+                    <a href="index.html#request" class="md-nav__link">
+                      Request
+                    </a>
+                    <nav class="md-nav" aria-label="Request">
+                      <ul class="md-nav__list">
+                        <li class="md-nav__item">
+                          <a href="index.html#example-request-multi-family-house" class="md-nav__link">
+                            Example Request (Multi-Family House):
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li class="md-nav__item">
+                    <a href="index.html#response" class="md-nav__link">
+                      Response
+                    </a>
+                    <nav class="md-nav" aria-label="Response">
+                      <ul class="md-nav__list">
+                        <li class="md-nav__item">
+                          <a href="index.html#example-response-multi-family-house" class="md-nav__link">
+                            Example Response (Multi-Family House)
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="md-content" data-md-component="content">
+          <article class="md-content__inner md-typeset">
+            <h1>Valuation Light</h1>
+            <p><code>POST</code> <code>valuation/property_value_light</code></p>
+            <p>Performs a simple valuation of the specified property.</p>
+            <p>If you would like to perform valuations for multiple properties (in a single call),
+              create time series, or achieve better valuations by taking more parameters into account,
+              consider using the full-fledged <a
+                href="https://docs.pricehubble.com/international/valuation/">Valuation</a> endpoint.
+            </p>
+            <script type="text/javascript"
+              src="https://pricehubble.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/azc3hx/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=09c3f0c3"></script>
+
+            <div class="p-4">
+              <br>
+              <input id="username" type="text" class="form-control" id="exampleInputUsername"
+                aria-describedby="usernameHelp" placeholder="Enter Username">
+              <br>
+              <input id="password" type="password" class="form-control" id="exampleInputPassword"
+                placeholder="Password">
+              <br>
+              <button generate-key-btn class="btn btn-primary mb-4">Generate Key</button>
+              <br>
+              <input id="key" type="text" class="form-control invisible">
+              <br>
+              <form data-form>
+                <div class="input-group mb-4">
+                  <select class="form-select flex-grow-0 w-auto" data-method>
+                    <option value="GET">GET</option>
+                    <option value="POST" selected>POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="PATCH">PATCH</option>
+                    <option value="DELETE">DELETE</option>
+                  </select>
+                  <input data-url required class="form-control" type="url"
+                    value="https://api.pricehubble.com/api/v1/valuation/property_value_light" />
+                  <button type="submit" class="btn btn-primary">Send</button>
+
+                </div>
+
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="json-tab" data-bs-toggle="tab" data-bs-target="#json"
+                      type="button" role="tab" aria-controls="json" aria-selected="false">JSON</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link invisible" id="query-params-tab" data-bs-toggle="tab"
+                      data-bs-target="#query-params" type="button" role="tab" aria-controls="query-params"
+                      aria-selected="true">Query Params</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link invisible" id="request-headers-tab" data-bs-toggle="tab"
+                      data-bs-target="#request-headers" type="button" role="tab" aria-controls="request-headers"
+                      aria-selected="false">Headers</button>
+                  </li>
+                </ul>
+
+                <div class="tab-content p-3 border-top-0 border">
+                  <div class="tab-pane fade invisible" id="query-params" role="tabpanel"
+                    aria-labelledby="query-params-tab">
+                    <div data-query-params></div>
+                    <button data-add-query-param-btn class="mt-2 btn btn-outline-success" type="button">Add</button>
+                  </div>
+                  <div class="tab-pane fade invisible" id="request-headers" role="tabpanel"
+                    aria-labelledby="request-headers-tab">
+                    <div data-request-headers></div>
+                    <button data-add-request-header-btn class="mt-2 btn btn-outline-success" type="button">Add</button>
+                  </div>
+                  <div class="tab-pane fade show active" id="json" role="tabpanel" aria-labelledby="json-tab">
+                    <div data-json-request-body class="overflow-auto" style="max-height: 200px;"></div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="mt-5 d-none" data-response-section>
+                <h3>Response</h3>
+                <div class="d-flex my-2">
+                  <div class="me-3">
+                    Status: <span data-status></span>
+                  </div>
+                  <div class="me-3">
+                    Time: <span data-time></span>ms
+                  </div>
+                  <div class="me-3">
+                    Size: <span data-size></span>
+                  </div>
+                </div>
+
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="body-tab" data-bs-toggle="tab" data-bs-target="#body"
+                      type="button" role="tab" aria-controls="body" aria-selected="true">Body</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="response-headers-tab" data-bs-toggle="tab"
+                      data-bs-target="#response-headers" type="button" role="tab" aria-controls="response-headers"
+                      aria-selected="false">Headers</button>
+                  </li>
+                </ul>
+
+                <div class="tab-content p-3 border-top-0 border">
+                  <div class="tab-pane fade show active" id="body" role="tabpanel" aria-labelledby="body-tab">
+                    <div data-json-response-body class="overflow-auto" style="max-height: 200px;"></div>
+                  </div>
+                  <div class="tab-pane fade" id="response-headers" role="tabpanel"
+                    aria-labelledby="response-headers-tab">
+                    <div style="display: grid; grid-template-columns: auto 1fr; gap: .5rem 2rem;" data-response-headers>
+                    </div>
                   </div>
                 </div>
               </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="index.html#request" class="md-nav__link">
-    Request
-  </a>
-  
-    <nav class="md-nav" aria-label="Request">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="index.html#example-request-multi-family-house" class="md-nav__link">
-    Example Request (Multi-Family House):
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="index.html#response" class="md-nav__link">
-    Response
-  </a>
-  
-    <nav class="md-nav" aria-label="Response">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="index.html#example-response-multi-family-house" class="md-nav__link">
-    Example Response (Multi-Family House)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
+            </div>
+
+            <template data-key-value-template>
+              <div class="input-group my-2" data-key-value-pair>
+                <input type="text" data-key class="form-control form-control-sm" value="Authorization" />
+                <input bearer_key type="text" id="bearer" data-value class="form-control form-control-sm" />
+                <button type="button" data-remove-btn class="btn btn-outline-danger">Remove</button>
               </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>Valuation Light</h1>
-                
-                <p><code>POST</code> <code>valuation/property_value_light</code></p>
-<p>Performs a simple valuation of the specified property.</p>
-<p>If you would like to perform valuations for multiple properties (in a single call),
-create time series, or achieve better valuations by taking more parameters into account,
-consider using the full-fledged <a href="https://docs.pricehubble.com/international/valuation/">Valuation</a> endpoint.</p>
-
-<script type="text/javascript" src="https://pricehubble.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/azc3hx/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=09c3f0c3"></script>
-
-
-
-
-
-  <div class="p-4">
-    <form data-form style="border-width:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
-        <div class="form-row">
-    <div class="col">
-      <input type="text" class="form-control form-control-sm" placeholder="Username">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control form-control-sm" placeholder="Password">
-    </div>
-  </div>
-      <div class="input-group input-group-sm mb-4">
-        <select class="form-select form-select-sm" data-method>
-          <option value="GET">GET</option>
-          <option value="POST" selected>POST</option>
-          <option value="PUT">PUT</option>
-          <option value="PATCH">PATCH</option>
-          <option value="DELETE">DELETE</option>
-        </select>
-       <input data-url required class="form-control form-control-sm" type="url" value="https://api.pricehubble.com/api/v1/valuation/property_value_light" />
-       <button type="submit" class="btn btn-primary btn-sm">Send</button>
-      </div>
-       
-        
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="request-headers-tab" data-bs-toggle="tab" data-bs-target="#request-headers" type="button" role="tab" aria-controls="request-headers" aria-selected="false">Headers</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="json-tab" data-bs-toggle="tab" data-bs-target="#json" type="button" role="tab" aria-controls="json" aria-selected="false">JSON</button>
-        </li>
-      </ul>
-
-      <div class="tab-content p-3 border-top-0 border">
-        <div class="tab-pane fade show active" id="query-params" role="tabpanel" aria-labelledby="query-params-tab">
-          <div data-query-params></div>
-          <button data-add-query-param-btn class="mt-2 btn btn-outline-success btn-sm" type="button">Add</button>
-        </div>
-        <div class="tab-pane fade" id="request-headers" role="tabpanel" aria-labelledby="request-headers-tab">
-          <div data-request-headers></div>
-          <button data-add-request-header-btn class="mt-2 btn btn-outline-success btn-sm" type="button">Add</button>
-        </div>
-        <div class="tab-pane fade" id="json" role="tabpanel" aria-labelledby="json-tab">
-          <div data-json-request-body class="overflow-auto" value="" style="max-height: 200px;"></div>
-        </div>
-      </div>
-
-    </form>
-
-    <div class="mt-5 d-none" data-response-section>
-      <h3>Response</h3>
-      <div class="d-flex my-2">
-        <div class="me-3">
-          Status: <span data-status></span>
-        </div>
-        <div class="me-3">
-          Time: <span data-time></span>ms
-        </div>
-        <div class="me-3">
-          Size: <span data-size></span>
-        </div>
-      </div>
-
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="body-tab" data-bs-toggle="tab" data-bs-target="#body" type="button" role="tab" aria-controls="body" aria-selected="true">Body</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="response-headers-tab" data-bs-toggle="tab" data-bs-target="#response-headers" type="button" role="tab" aria-controls="response-headers" aria-selected="false">Headers</button>
-        </li>
-      </ul>
-
-      <div class="tab-content p-3 border-top-0 border">
-        <div class="tab-pane fade show active" id="body" role="tabpanel" aria-labelledby="body-tab">
-          <div data-json-response-body class="overflow-auto" style="max-height: 200px;"></div>
-        </div>
-        <div class="tab-pane fade" id="response-headers" role="tabpanel" aria-labelledby="response-headers-tab">
-          <div style="display: grid; grid-template-columns: auto 1fr; gap: .5rem 2rem;" data-response-headers></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <template data-key-value-template>
-    <div class="input-group my-2" data-key-value-pair>
-      <input type="text" data-key class="form-control form-control-sm" value="Authorization" />
-      <input type="text" data-value class="form-control form-control-sm" value="Bearer 1c8710a5f8444ec6ad91de9d546407ed" />
-      <button type="button" data-remove-btn class="btn btn-outline-danger btn-sm">Remove</button>
-    </div>
-
-  </template>
-
-
-
-
-<h2 id="request">Request<a class="headerlink" href="index.html#request" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code>curl -X POST <span class="s1">&#39;https://api.pricehubble.com/api/v1/valuation/property_value_light&#39;</span> <span class="se">\</span>
+            </template>
+            <h2 id="request">Request<a class="headerlink" href="index.html#request" title="Permanent link">#</a></h2>
+            <div class="highlight">
+              <pre><span></span><code>curl -X POST <span class="s1">&#39;https://api.pricehubble.com/api/v1/valuation/property_value_light&#39;</span> <span class="se">\</span>
   -H <span class="s1">&#39;content-type: application/json&#39;</span> <span class="se">\</span>
   -H <span class="s1">&#39;Authorization: Bearer 74126eab0a9048d993bda4b1b55ae074&#39;</span> <span class="se">\</span>
   -d <span class="s1">&#39;{</span>
@@ -1722,9 +1014,12 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
 <span class="s1">    },</span>
 <span class="s1">    &quot;countryCode&quot;: &quot;CH&quot;</span>
 <span class="s1">}&#39;</span>
-</code></pre></div>
-<h3 id="example-request-multi-family-house">Example Request (Multi-Family House):<a class="headerlink" href="index.html#example-request-multi-family-house" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code>curl -X POST <span class="s1">&#39;https://api.pricehubble.com/api/v1/valuation/property_value_light&#39;</span> <span class="se">\</span>
+</code></pre>
+            </div>
+            <h3 id="example-request-multi-family-house">Example Request (Multi-Family House):<a class="headerlink"
+                href="index.html#example-request-multi-family-house" title="Permanent link">#</a></h3>
+            <div class="highlight">
+              <pre><span></span><code>curl -X POST <span class="s1">&#39;https://api.pricehubble.com/api/v1/valuation/property_value_light&#39;</span> <span class="se">\</span>
   -H <span class="s1">&#39;content-type: application/json&#39;</span> <span class="se">\</span>
   -H <span class="s1">&#39;Authorization: Bearer 74126eab0a9048d993bda4b1b55ae074&#39;</span> <span class="se">\</span>
   -d <span class="s1">&#39;{</span>
@@ -1748,39 +1043,46 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
 <span class="s1">    },</span>
 <span class="s1">    &quot;countryCode&quot;: &quot;DE&quot;</span>
 <span class="s1">}&#39;</span>
-</code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-<th>Type</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>dealType</strong></td>
-<td>Deal type of the valuation</td>
-<td>string</td>
-<td>Valid values are <code>sale</code> or <code>rent</code>. <code>rent</code> is not accepted for <code>multi_family_house</code> property type code.</td>
-</tr>
-<tr>
-<td><strong>property</strong></td>
-<td>Property description</td>
-<td><a href="https://docs.pricehubble.com/types#propertylight">PropertyLight</a></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>countryCode</strong></td>
-<td>ISO country code</td>
-<td>string</td>
-<td>In France, sale valuations are supported for the following remote territories: <code>Guadeloupe</code>, <code>Guyane</code>, <code>Martinique</code> and <code>Réunion</code>; any other remote territories and rent valuations are currently not supported.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="response">Response<a class="headerlink" href="index.html#response" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+</code></pre>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Field</th>
+                  <th>Description</th>
+                  <th>Type</th>
+                  <th>Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>dealType</strong></td>
+                  <td>Deal type of the valuation</td>
+                  <td>string</td>
+                  <td>Valid values are <code>sale</code> or <code>rent</code>. <code>rent</code> is not accepted for
+                    <code>multi_family_house</code> property type code.
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>property</strong></td>
+                  <td>Property description</td>
+                  <td><a href="https://docs.pricehubble.com/types#propertylight">PropertyLight</a></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong>countryCode</strong></td>
+                  <td>ISO country code</td>
+                  <td>string</td>
+                  <td>In France, sale valuations are supported for the following remote territories:
+                    <code>Guadeloupe</code>, <code>Guyane</code>, <code>Martinique</code> and <code>Réunion</code>; any
+                    other remote territories and rent valuations are currently not supported.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="response">Response<a class="headerlink" href="index.html#response" title="Permanent link">#</a></h2>
+            <div class="highlight">
+              <pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;confidence&quot;</span><span class="p">:</span> <span class="s2">&quot;medium&quot;</span><span class="p">,</span>
     <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;CHF&quot;</span><span class="p">,</span>
     <span class="nt">&quot;valueRange&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1788,9 +1090,12 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
         <span class="nt">&quot;upper&quot;</span><span class="p">:</span> <span class="mi">2156800</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
-<h3 id="example-response-multi-family-house">Example Response (Multi-Family House)<a class="headerlink" href="index.html#example-response-multi-family-house" title="Permanent link">#</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+</code></pre>
+            </div>
+            <h3 id="example-response-multi-family-house">Example Response (Multi-Family House)<a class="headerlink"
+                href="index.html#example-response-multi-family-house" title="Permanent link">#</a></h3>
+            <div class="highlight">
+              <pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;confidence&quot;</span><span class="p">:</span> <span class="s2">&quot;poor&quot;</span><span class="p">,</span>
     <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
     <span class="nt">&quot;valueRange&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1798,69 +1103,67 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
         <span class="nt">&quot;upper&quot;</span><span class="p">:</span> <span class="mi">8436100</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-<th>Type</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>confidence</strong></td>
-<td>Confidence of the valuation</td>
-<td>string</td>
-<td>Valid values are <code>poor</code>, <code>medium</code> or <code>good</code></td>
-</tr>
-<tr>
-<td><strong>currency</strong></td>
-<td>Currency of <code>valueRange</code></td>
-<td><a href="https://docs.pricehubble.com/types#currency">Currency</a></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>valueRange.lower</strong></td>
-<td>Estimated lower bound of the property's market value (sale price value if <code>dealType</code> is <code>sale</code> or gross or net rent value if <code>dealType</code> is <code>rent</code>). For <code>JP</code> net rent and for all other countries gross rent is returned</td>
-<td>integer</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>valueRange.upper</strong></td>
-<td>Estimated upper bound of the property's market value (sale price value if <code>dealType</code> is <code>sale</code> or gross or net rent value if <code>dealType</code> is <code>rent</code>). For <code>JP</code> net rent and for all other countries gross rent is returned</td>
-<td>integer</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
+</code></pre>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Field</th>
+                  <th>Description</th>
+                  <th>Type</th>
+                  <th>Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>confidence</strong></td>
+                  <td>Confidence of the valuation</td>
+                  <td>string</td>
+                  <td>Valid values are <code>poor</code>, <code>medium</code> or <code>good</code></td>
+                </tr>
+                <tr>
+                  <td><strong>currency</strong></td>
+                  <td>Currency of <code>valueRange</code></td>
+                  <td><a href="https://docs.pricehubble.com/types#currency">Currency</a></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong>valueRange.lower</strong></td>
+                  <td>Estimated lower bound of the property's market value (sale price value if <code>dealType</code> is
+                    <code>sale</code> or gross or net rent value if <code>dealType</code> is <code>rent</code>). For
+                    <code>JP</code> net rent and for all other countries gross rent is returned
+                  </td>
+                  <td>integer</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong>valueRange.upper</strong></td>
+                  <td>Estimated upper bound of the property's market value (sale price value if <code>dealType</code> is
+                    <code>sale</code> or gross or net rent value if <code>dealType</code> is <code>rent</code>). For
+                    <code>JP</code> net rent and for all other countries gross rent is returned
+                  </td>
+                  <td>integer</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
         </div>
-        
-          <a href="index.html#" class="md-top md-icon" title="Back to top" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
-          </a>
-        
-      </main>
-      
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="https://docs.pricehubble.com/international/valuation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Valuation" rel="prev">
+      </div>
+      <a href="index.html#" class="md-top md-icon" title="Back to top" data-md-component="top" data-md-state="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z" />
+        </svg>
+      </a>
+    </main>
+    <footer class="md-footer">
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        <a href="https://docs.pricehubble.com/international/valuation/" class="md-footer__link md-footer__link--prev"
+          aria-label="Previous: Valuation" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z" />
+            </svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -1871,10 +1174,8 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
             </div>
           </div>
         </a>
-      
-      
-        
-        <a href="https://docs.pricehubble.com/international/dossier_creation/" class="md-footer__link md-footer__link--next" aria-label="Next: Dossier Creation" rel="next">
+        <a href="https://docs.pricehubble.com/international/dossier_creation/"
+          class="md-footer__link md-footer__link--next" aria-label="Next: Dossier Creation" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1884,38 +1185,31 @@ consider using the full-fledged <a href="https://docs.pricehubble.com/internatio
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z" />
+            </svg>
           </div>
         </a>
-      
-    </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
+      </nav>
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          <div class="md-footer-copyright">
+            Made with
+            <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+              Material for MkDocs
+            </a>
+          </div>
+        </div>
       </div>
-      
-    </div>
+    </footer>
   </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
-      
-        <script src="../../assets/javascript.js"></script>
-      
-    
-  </body>
+  <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog__inner md-typeset"></div>
+  </div>
+  <script id="__config"
+    type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
+  <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
+  <script src="../../assets/javascript.js"></script>
+</body>
+
 </html>
